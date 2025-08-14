@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-globe-americas"></i> Wanderlust Travel</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Next Adventure</h1>
+            <p class="hero-subtitle">Embark on a journey of cultural exploration and unforgettable experiences around the world</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search destinations, countries, or experiences..." class="search-input">
+                <button class="search-btn" onclick="searchDestinations( )">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <!-- Book Now Button -->
+            <button class="book-now-btn" onclick="openBookingModal()">
+                <i class="fas fa-plane"></i> Book Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Welcome to Wanderlust Travel</h2>
+            <p>Your gateway to extraordinary adventures and cultural discoveries. We specialize in creating personalized travel experiences that connect you with the world's most beautiful destinations, rich cultures, and unforgettable memories.</p>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            
+            <!-- Beach Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-umbrella-beach"></i> Paradise Beaches</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Maldives Beach" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=250&fit=crop" alt="Maldives Resort" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Maldives</h4>
+                            <p>Crystal clear waters, overwater bungalows, and pristine white sand beaches make the Maldives the ultimate tropical paradise.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-swimming-pool"></i> Overwater Villas</span>
+                                <span><i class="fas fa-fish"></i> Snorkeling</span>
+                                <span><i class="fas fa-spa"></i> Luxury Spas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=400&h=250&fit=crop" alt="Bali Beach" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=400&h=250&fit=crop" alt="Bali Sunset" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Bali, Indonesia</h4>
+                            <p>Experience the perfect blend of beautiful beaches, rich culture, and spiritual tranquility in this Indonesian paradise.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-om"></i> Temples</span>
+                                <span><i class="fas fa-leaf"></i> Rice Terraces</span>
+                                <span><i class="fas fa-cocktail"></i> Beach Clubs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temple Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-place-of-worship"></i> Sacred Temples</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?w=400&h=250&fit=crop" alt="Angkor Wat" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&h=250&fit=crop" alt="Angkor Sunrise" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Angkor Wat, Cambodia</h4>
+                            <p>Witness the magnificent sunrise over the world's largest religious monument and explore the ancient Khmer empire's architectural masterpiece.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-history"></i> Ancient History</span>
+                                <span><i class="fas fa-camera"></i> Photography</span>
+                                <span><i class="fas fa-sun"></i> Sunrise Tours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=250&fit=crop" alt="Kyoto Temple" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&h=250&fit=crop" alt="Temple Garden" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Kyoto Temples, Japan</h4>
+                            <p>Discover the spiritual heart of Japan through its thousands of temples, traditional gardens, and preserved cultural districts.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-torii-gate"></i> Shrines</span>
+                                <span><i class="fas fa-seedling"></i> Zen Gardens</span>
+                                <span><i class="fas fa-leaf"></i> Cherry Blossoms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country Recommendations -->
+            <div class="recommendation-category">
+                <h3><i class="fas fa-flag"></i> Country Highlights</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Iceland Northern Lights" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?w=400&h=250&fit=crop" alt="Iceland Waterfall" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Iceland</h4>
+                            <p>Experience the land of fire and ice with its dramatic landscapes, Northern Lights, geysers, and breathtaking waterfalls.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-snowflake"></i> Northern Lights</span>
+                                <span><i class="fas fa-hot-tub"></i> Hot Springs</span>
+                                <span><i class="fas fa-mountain"></i> Glaciers</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="card-images">
+                            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?w=400&h=250&fit=crop" alt="Morocco Desert" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=400&h=250&fit=crop" alt="Morocco Markets" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <h4>Morocco</h4>
+                            <p>Immerse yourself in the vibrant culture, bustling souks, Sahara Desert adventures, and architectural wonders of North Africa.</p>
+                            <div class="card-features">
+                                <span><i class="fas fa-mosque"></i> Architecture</span>
+                                <span><i class="fas fa-shopping-bag"></i> Markets</span>
+                                <span><i class="fas fa-campground"></i> Desert Camps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal( )">&times;</span>
+            <h2>Book Your Adventure</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="travelers">Number of Travelers:</label>
+                    <select id="travelers" name="travelers" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Traveler</option>
+                        <option value="2">2 Travelers</option>
+                        <option value="3">3 Travelers</option>
+                        <option value="4">4+ Travelers</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dates">Travel Dates:</label>
+                    <input type="date" id="dates" name="dates" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
